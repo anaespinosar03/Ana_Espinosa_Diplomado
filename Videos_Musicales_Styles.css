@@ -1,0 +1,259 @@
+
+body {
+    background-color: #f8f8f8;
+    margin: 0;
+    min-height: 100vh;
+    overflow-y: auto;
+  
+}
+
+.main-container {
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  overflow: visible;
+  position: relative;
+}
+
+/* Barra de Navegación */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+      background: rgba(0, 0, 0, 0.448);
+       backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);    
+    padding: 12px 30px;
+    border-radius: 100px;
+    top: 30px;
+    left: 35px;
+    right: 35px;
+    position: absolute;
+    z-index: 10;
+
+}
+
+/* CONTENEDOR CLAVE */
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+/* ICONO */
+.icono img {
+    width: 90px;
+    height: auto;
+}
+
+/* LINKS */
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 0;
+    margin: 0;
+    font-family: Jost, sans-serif;
+    font-weight: 400;
+
+}
+
+.contact-link {
+    color: #d966a5;
+    padding: 0px 16px;
+    border-radius: 18px;
+    text-decoration: none;
+    font-family: Jost, sans-serif;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    white-space: nowrap;
+   transition: transform 0.3s ease;
+
+
+    
+}
+
+.contact-link:hover {
+    color: #11d331;
+    transform: scale(1.2);
+} 
+
+.redes-sociales{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+}   
+
+
+.redes-sociales a img {
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.redes-sociales a:hover {
+    transform: scale(1.2);
+    filter: brightness(0) saturate(100%) invert(56%) sepia(83%) saturate(518%) hue-rotate(78deg); 
+    transition: transform 0.3s ease;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+     padding: 8px 15px;
+  border-radius: 20px;
+  transition: 
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  background: #aa266f99;
+  color:#ffffff
+
+}
+
+.nav-links a:visited {
+    color: #ffffff;
+}
+
+/* =======================
+   SECCIÓN VIDEOS
+======================= */
+
+.videos-section {
+    min-height: 100vh;
+    padding: 140px 10% 80px;
+    background-image: url("Imagenes/Videos/Fondo_ajolote.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.videos-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+h2 {
+    z-index: 1;
+    text-align: left;
+    font-family: 'Nutty Noisses', cursive;
+    text-transform: uppercase;
+    font-size: 3rem;
+    letter-spacing: 1rem;
+    color: #ffffff;
+    margin: 10px 0 5px 0;
+}
+
+/* GRID */
+.videos-grid {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(280px,1fr));
+    gap: 30px;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.video-thumb {
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #000000;
+}
+
+.video-thumb img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.video-thumb:hover img {
+    transform: scale(1.08);
+}
+
+.video-thumb::after {
+    content: "▶";
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    color: white;
+    opacity: 0.9;
+}
+
+/* MODAL */
+.video-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.video-modal.active {
+    display: flex;
+}
+
+.modal-content {
+    position: relative;
+    width: 80%;
+    max-width: 900px;
+    aspect-ratio: 16/9;
+    background: black;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.modal-content iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.close-btn {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+}
+
+
+@font-face {
+  font-family:'Nutty Noisses';
+  src: url("Fonts/Nutty\ Noisses.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
