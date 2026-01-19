@@ -47,7 +47,7 @@ body {
 .nav-left {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 10px;
 }
 
 .nav-right {
@@ -67,7 +67,7 @@ body {
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 10px;
     padding: 0;
     margin: 0;
     font-family: Jost, sans-serif;

@@ -17,12 +17,12 @@
     <nav class="navbar">
         <!-- CONTENEDOR IZQUIERDO -->
         <div class="nav-left">
-            <div class="icono">
-                <img src="Imagenes/brand/icono.png" alt="icono">
-            </div>
-
+              <div class="icono">
+                 <a href="Anxos.html">
+                    <img src="Imagenes/brand/icono.png" alt="icono"></div>
+                </a>
+            
             <ul class="nav-links">
-                <li><a href="Anxos.html">Inicio</a></li>
                 <li><a href="Integrantes.html">Integrantes</a></li>
 
                 <li><a href="Discografia.html">Discografía</a></li>
@@ -76,9 +76,11 @@
         </div>
     </nav>
 
+    <!--GALERÍA-->
+
     <div class="gallery">
         <div class="gallery-item">
-            <img src="Imagenes/Galeria/F1.jpg" alt="F1">
+            <img src="Imagenes/Galeria/F1.jpg" alt="F1" data-creditos="Foto por: Diana Rosas">
         </div>
 
         <div class="gallery-item">
@@ -150,7 +152,7 @@
         </div>
 
          <div class="gallery-item">
-            <img src="Imagenes/Galeria/F19.jpg" alt="F19">
+            <img src="Imagenes/Galeria/F19.jpg" alt="F19" data-creditos="Foto por: Diana Rosas">
         </div>
 
         <div class="gallery-item">
@@ -202,7 +204,7 @@
         </div>
 
         <div class="gallery-item">
-            <img src="Imagenes/Galeria/F32.jpg" alt="F32">
+            <img src="Imagenes/Galeria/F32.jpg" alt="F32"  data-creditos="1º de noviembre en la XXV Feria de las Calacas en el Centro Nacional de las Artes México · Foto por: Diana Rosas">
         </div>
 
         <div class="gallery-item">
@@ -223,9 +225,20 @@
 
     </div>
 
+    <!-- MODAL -->
+    <div class="modal" id="imageModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+                <img id="modalImage" src="" alt="">
+            <div class="image-info">
+                 <p id="imageCredits"></p>
+            </div>
+        </div>
+    </div>
+
 </div>
 
-<script src="#"></script>
+<script src="Galeria.js"></script>
 
 </body>
 </html>

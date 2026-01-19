@@ -40,7 +40,7 @@ body {
 .nav-left {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 10px;
 }
 
 .nav-right {
@@ -60,7 +60,7 @@ body {
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 10px;
     padding: 0;
     margin: 0;
     font-family: Jost, sans-serif;
@@ -155,13 +155,14 @@ body {
 }
 
 h2 {
+    position: relative;
     z-index: 1;
     text-align: left;
     font-family: 'Nutty Noisses', cursive;
     text-transform: uppercase;
     font-size: 3rem;
     letter-spacing: 1rem;
-    color: #ffffff;
+    color: #11d331;
     margin: 10px 0 5px 0;
 }
 
@@ -173,7 +174,7 @@ h2 {
     grid-template-columns: repeat(3, minmax(280px,1fr));
     gap: 30px;
     max-width: 1500px;
-    margin: 0 auto;
+    margin: 120px;
 }
 
 .video-thumb {
@@ -206,7 +207,7 @@ h2 {
     align-items: center;
     justify-content: center;
     font-size: 4rem;
-    color: white;
+    color: rgb(113, 231, 89);
     opacity: 0.9;
 }
 
@@ -230,7 +231,7 @@ h2 {
     width: 80%;
     max-width: 900px;
     aspect-ratio: 16/9;
-    background: black;
+    background: #000000;
     border-radius: 16px;
     overflow: hidden;
 }
@@ -246,7 +247,8 @@ h2 {
     right: 0;
     font-size: 2rem;
     cursor: pointer;
-    color: white;
+    color: #ffffff
+    ;
 }
 
 

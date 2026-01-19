@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Anxolotes | Sitio Oficial</title>
-    <link rel="stylesheet" href="Anxos_Styles.css">
+    <link rel="stylesheet" href="Discografia_Styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
                 <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -18,11 +18,12 @@
         <!-- CONTENEDOR IZQUIERDO -->
         <div class="nav-left">
             <div class="icono">
-                <img src="Imagenes/brand/icono.png" alt="icono">
+                  <a href="Anxos.html">
+                    <img src="Imagenes/brand/icono.png" alt="icono">
+                    </a>
             </div>
 
             <ul class="nav-links">
-                <li><a href="Anxos.html">Inicio</a></li>
                 <li><a href="Integrantes.html">Integrantes</a></li>
 
                 <li><a href="Discografia.html">Discografía</a></li>
@@ -76,9 +77,57 @@
         </div>
     </nav>
 
+    <!--DISCOGRAFIA-->
+
+    <section class="discography">
+
+        <h2 class="album-title">
+            <span class="album-sub">(01-14)</span>
+        </h2>
+
+
+        <div class="album-slider">
+
+            <button class="nav prev">&#10094;</button>
+
+            <div class="album-stack">
+                <img src="Imagenes/Discografia/4_Cuartos.png" class="album active">
+                <img src="Imagenes/Discografia/En_Busca_Amor.png" class="album">
+                <img src="Imagenes/Discografia/Todo Tuyo.png" class="album">
+                </div>
+
+            <button class="nav next">&#10095;</button>
+
+        </div>
+
+    </section>
+
+
+        <div class="tracklist-modal" id="tracklistModal">
+            <div class="tracklist-content">
+                <span class="close-tracklist">&times;</span>
+                <h3 id="tracklistTitle"></h3>
+                <ul id="tracklist"></ul>
+
+                <div class="embeds">
+                    <iframe
+                        id="spotifyEmbed"
+                        width="100%"
+                        height="152"
+                        frameborder="0"
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+                    </iframe>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
 </div>
 
-<script src="#"></script>
+<script src="Discografia.js"></script>
 
 </body>
 </html>
